@@ -1,6 +1,7 @@
 <b>Skip the repetitive anime intros!</b>
 
 Skips 1:25 in video player (most anime intros are 1:30 long) <b>(this is also configurable directly in the script)</b>
+
 Code was taken from https://greasyfork.org/en/scripts/30776-kissanime-skip-videos-90-seconds-skip-intro
 and was remade because not all websites use the same tags for videojs.
 
