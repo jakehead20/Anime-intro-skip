@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name Skip 85 seconds 'cause why not
+// @name Anime intro skip
 // @description Press 'L' to skip the intro when it starts. Based off of https://greasyfork.org/en/scripts/30776-kissanime-skip-videos-90-seconds-skip-intro
 // @namespace http://tampermonkey.net/
 // @include *rapidvideo.com*
