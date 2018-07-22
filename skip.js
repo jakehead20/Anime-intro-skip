@@ -9,7 +9,7 @@
 // @include *mp4upload.com*
 // @include *streamango.com*
 // @noframes
-// @version 1.0.0
+// @version 1.0.5
 // ==/UserScript==
 
 $(document).ready(function(){
