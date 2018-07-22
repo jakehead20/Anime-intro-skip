@@ -4,11 +4,10 @@
 // @namespace http://tampermonkey.net/
 // @grant GM_setValue
 // @grant GM_getValue
-// @require http://userscripts-mirror.org/scripts/source/107941.user.js 
+// @require http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js
 // @include *rapidvideo.com*
 // @include *mp4upload.com*
 // @include *streamango.com*
-// @include *barberry.fruithosted.net*
 // @noframes
 // @version 1.0.0
 // ==/UserScript==
@@ -33,15 +32,16 @@ $(document).ready(function(){
             }
         });
     }else{
-        if (videojs) {
+        if (typeof videojs === 'function') {
             let vids = videojs.getPlayers();
             let player = vids[Object.keys(vids)[0]];
             player.ready(function(){
                 window.addEventListener('keydown', function(e){
-                    if (e.which === key){
+                    if (e.which == key){
+                        let player = vids[Object.keys(vids)[0]];
                         player.currentTime(parseInt(player.currentTime())+time);
-                    }
-                    if (e.which === setkey){
+                    }else
+                    if (e.which == setkey){
                         changeSettings();
                     }
                 });
