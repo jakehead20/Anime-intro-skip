@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name Anime intro skip
-// @description Press 'L' to skip the intro when it starts. Based off of https://greasyfork.org/en/scripts/30776-kissanime-skip-videos-90-seconds-skip-intro
+// @description Press 'L' to skip the intro when it starts. You can press the minus/dash key on the number row of your keyboard to change settings. Keycodes can be found at keycode.info . Based off of https://greasyfork.org/en/scripts/30776-kissanime-skip-videos-90-seconds-skip-intro
 // @namespace http://tampermonkey.net/
 // @grant GM_setValue
 // @grant GM_getValue
