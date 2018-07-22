@@ -8,6 +8,7 @@
 // @include *rapidvideo.com*
 // @include *mp4upload.com*
 // @include *streamango.com*
+// @include *barberry.fruithosted.net*
 // @noframes
 // @version 1.0.0
 // ==/UserScript==
