@@ -7,3 +7,5 @@ and was remade because not all websites use the same tags for videojs.
 
 Will work once you include the streaming service's website that your anime website uses.
 If you want any other player support added, just create an issue and I'll see if I can work on it.
+
+GreasyFork: https://greasyfork.org/en/scripts/370511-anime-intro-skip
