@@ -14,7 +14,6 @@
 // @version 1.0.0
 // ==/UserScript==
 $(document).ready(function(){
-    console.log(window.self === window.top);
     let time = GM_SuperValue.get("skipTime", 85); // 1:25 just in case you're a little bit farther away from your keyboard :)
     let key = GM_SuperValue.get("keyCode", 76); // Key used to skip time
     let setkey = GM_SuperValue.get("settingkeyCode", 189); // Key used to change settings
