@@ -11,7 +11,7 @@
 // @include *streamango.com*
 // @include *vidstreaming.io*
 // @include *kissanime.ru/Anime/*
-// @version 1.0.0
+// @version 1.1.0
 // ==/UserScript==
 $(document).ready(function(){
     let time = GM_SuperValue.get("skipTime", 85); // 1:25 just in case you're a little bit farther away from your keyboard :)
