@@ -31,8 +31,8 @@ $(document).ready(function(){
         }
         GM_SuperValue.set("keyCode", key);
     };
-    let url = window.location.href;
-    if (typeof jwplayer === 'function'){
+    let url = document.URL;
+    if (typeof jwplayer === 'function' && url.indexOf('kissanime.ru') == -1){
         let callback = function(e){
             if (e.which == key){
                 jwplayer().seek(jwplayer().getPosition()+parseInt(time));
@@ -44,11 +44,19 @@ $(document).ready(function(){
         window.addEventListener('keydown', callback);
     }else{
         if (typeof videojs === 'function') {
-            let vids = videojs.getPlayers();
-            let player = vids[Object.keys(vids)[0]];
+            let vids;
+            let player;
+            if(url.indexOf('kissanime.ru') > -1){
+                vids = document.getElementsByTagName('video');
+                if(vids.length > 0){
+                    player = videojs(vids[0]);
+                }
+            }else{
+                vids = videojs.getPlayers();
+                player = vids[Object.keys(vids)[0]];
+            }
             let callback = function(e){
                 if (e.which == key){
-                    let player = vids[Object.keys(vids)[0]];
                     player.currentTime(player.currentTime()+parseInt(time));
                 }else
                 if (e.which == setkey){
