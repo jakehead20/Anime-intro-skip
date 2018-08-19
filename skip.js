@@ -11,6 +11,7 @@
 // @include *streamango.com*
 // @include *vidstreaming.io*
 // @include *kissanime.ru/Anime/*
+// @include *masterani.me/anime/watch/*
 // @version 1.1.0
 // ==/UserScript==
 $(document).ready(function(){
@@ -20,15 +21,9 @@ $(document).ready(function(){
     let changeSettings = function(){
         let timehold = time;
         let keyhold = key;
-        time = prompt("How many seconds should we skip?", time);
-        if(!time){
-            time = timehold;
-        }
+        time = prompt("How many seconds should we skip?", time) || time;
         GM_SuperValue.set("skipTime", time);
-        key = prompt("Keycode for skipping time (go to keycode.info for keycodes).", key);
-        if(!key){
-            key = keyhold;
-        }
+        key = prompt("Keycode for skipping time (go to keycode.info for keycodes).", key) || key;
         GM_SuperValue.set("keyCode", key);
     };
     let url = document.URL;
