@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Actually Invincible Spider
+// @name         AIS
 // @namespace    http://tampermonkey.net/
 // @version      1.0.6.5
 // @description  Period to skip forward, comma to skip backward (cause why not), slash to edit keybinds and skip time, U to copy video source's URL. Works only on HTML5 videos for now.
