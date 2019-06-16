@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name         Accelerated Induction Spear
+// @name         Actually Invincible Spider
 // @namespace    http://tampermonkey.net/
-// @version      1.0.6
+// @version      1.0.6.5
 // @description  Period to skip forward, comma to skip backward (cause why not), slash to edit keybinds and skip time, U to copy video source's URL. Works only on HTML5 videos for now.
 // @author       jaek#9509
-// @match        https://*
+// @match        *://*/*
 // @grant        GM.getValue
 // @grant        GM.setValue
 // ==/UserScript==
