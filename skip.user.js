@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         AIS
 // @namespace    http://tampermonkey.net/
-// @version      1.0.5
+// @version      1.0.6
 // @description  Period to skip forward, comma to skip backward (cause why not), slash to edit keybinds and skip time, U to video source's URL. Works only on HTML5 videos for now.
 // @author       jaek#9509
-// @match        https://twist.moe/a/*/*
+// @match        https://*
 // @grant        GM.getValue
 // @grant        GM.setValue
 // ==/UserScript==
@@ -49,6 +49,7 @@ function copyTextToClipboard(text) {
     var editKey = 191;
     document.addEventListener("keydown", function(e){
         var vid = document.getElementsByTagName("video")[0];
+        if(!vid) return;
         switch(e.keyCode){
             case forwardKey:
                 vid.currentTime += skipTime;
