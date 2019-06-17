@@ -5,6 +5,8 @@
 // @description  Period to skip forward, comma to skip backward (cause why not), slash to edit keybinds and skip time, U to copy video source's URL. Works only on HTML5 videos for now.
 // @author       jaek#9509
 // @match        *://*/*
+// @updateURL    https://github.com/jakehead20/AIS/raw/master/skip.user.js
+// @downloadURL  https://github.com/jakehead20/AIS/raw/master/skip.user.js
 // @grant        GM.getValue
 // @grant        GM.setValue
 // ==/UserScript==
